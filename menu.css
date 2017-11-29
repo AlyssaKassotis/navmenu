@@ -12,31 +12,26 @@ Add the hover/active effects to your menu items
 html{
     font-size: 16px;
     line-height: 1.6;
-    /* ADD the Google sans-serif font to this font stack */
-    font-family: Ubuntu, helvetica, arial, sans-serif;
+    /* ADD the Google sans-serif font to this font stack DONE */
+    font-family: 'Open Sans', arial, sans-serif;
 }
 html, body{
-    background-color: salmon;
+    background-color: #ffd5fa;
 }
 h1{
     font-size: 6.854rem;
-    /* ADD the Google serif font to this font stack */
-    font-family: Lora, 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+    /* ADD the Google serif font to this font stack DONE*/
+    font-family: 'Gentium Book Basic', Palatino, serif;
     padding: 1rem 2rem;
 }
 h2{
     font-size: 4.23rem;
-    /* ADD the Google serif font to this font stack */
-    font-family: Lora, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    /* ADD the Google serif font to this font stack DONE*/
+    font-family: 'Gentium Book Basic', Palatino, serif;
     padding: 1rem 2rem;
 }
 nav li{
-    font-size: 2.618rem; 
-}
-
-nav li>a:hover,
-nav li>a:active{
-    color: cornflowerblue;
+    font-size: 2.618rem;
 }
 p{
     font-size: 1.618rem;
@@ -46,57 +41,79 @@ p{
     max-width: 1400px; 
     width: 80%;
     margin: 0 auto;
-    background-color: chartreuse;
-    color: rebeccapurple;
+    background-color: #7f4479;
+    color: #cc6ec1;
+    
 }
 header{
-    border-bottom: 0.8rem solid khaki;
-    background-color: cornflowerblue;
-    color: aliceblue;
+    border-bottom: 0.8rem solid #7f4479;
+    background-color: #7f6b7d;
+    color: #7f4479;
 }
 .menu-h{
     width: 100%;
+    
 }
     .menu-h li{
-        display: block;
-        display: inline;
+        display: inline-block;
+        width: 20%;
+        float: left;
+        text-align: center;
+        border: 1px solid;
         
-        /* style the list items to remove the bullets 
-        and line up horizontally
-        and take up 20% of the width of the ul */
+        /* style the list items to remove the bullets DONE
+        and line up horizontally DONE
+        and take up 20% of the width of the ul DONE */
     }
         .menu-h a,
         .menu-h a:link,
-        .menu-h a:visited
-}
-        
-            /* style the anchors to fill the entire width of the li 
-            make sure there is padding around your text */
+        .menu-h a:visited{
+            text-decoration: none;
+            background-color: #cc6ec1;
+            display: block;
+            color: #7f4479;
+            padding: 5%;
         }
         .menu-h a:hover,
         .menu-h a:active{
-            
+            background-color: #7f6b7d;
+            display: block;
+            color: #7f4479;
+            box-shadow: inset 0 0 40px;
+
         }
 .menu-v{
-    width: 100%;
+    width: 20%;
     float:left;
-    
 }
     .menu-v li{
-        display: block;
-        
-        /* style the list items to remove the bullets 
+
+        display: inline-block;
+        width: 100%;
+        float: left;
+        text-align: center;
+        border: 1px solid;
+        /* DONE style the list items to remove the bullets
         and line up vertically
         and take up 100% of the width of the ul */
     }
         .menu-v a,
         .menu-v a:link,
         .menu-v a:visited{
-            /* style the anchors to fill the entire width of the li */
+            text-decoration: none;
+            background-color: #cc6ec1;
+            display: block;
+            color: #7f4479;
+            padding: 5%;
+            text-shadow: 2px #7f6b7b;
+            
         }
         .menu-v a:hover,
         .menu-v a:active{
-            
+            background-color: #7f6b7d;
+            display: block;
+            text-shadow: 1px 1px 2px black, 0 0 25px #7f4479, 0 0 5px #ffd5fa;
+
         }
 main{
     width:80%;
